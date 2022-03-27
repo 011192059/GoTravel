@@ -138,15 +138,21 @@
     
     <br>
     <input id="button" type="submit" value="Click to Login">
+   
 </form>
 
 <form id="box" action="register.php" method="POST">  
 <div style="font-size: 20px;margin: 10px;"><b> Don't have an account yet? Register Now!</b> </div>
 
         <button id="button" type="submit">Register</button>
-        <button id="button" type="submit">Log In as Admin</button>
+        <button id="button" type="button" onclick="a_login()">Log In as Admin</button>
 <br>
 </form>
+<script>
+                    function a_login(){
+                        location.assign('a_login.php');   ///default GET method
+                    }
+     </script>   
 
 <br>
 
